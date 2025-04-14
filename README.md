@@ -12,12 +12,12 @@ git clone https://github.com/yourusername/cybersecurity_anomaly_detection.git
 cd cybersecurity_anomaly_detection
 ```
 ### 2. Create and Activate Virtual Environment
-# On Windows
+#### On Windows
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
-# On Mac/Linux
+#### On Mac/Linux
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -38,5 +38,5 @@ pip install -r requirements.txt
 ## Contributions
 **Feel free to fork this repo or open an issue if you have suggestions for improvement.**
 
-# Author
+## Author
 **Ayotunde Ogunnaiya**
