@@ -29,11 +29,18 @@ pip install -r requirements.txt
 ```
 
 ## Project Structure
-- `cybersecurity_anomaly_detection/`
-    - `data/`: Datasets.
-    - `notebooks/`: Jupyter notebooks for analysis and model training.
-    - `src/`: Python scripts.
-    - `results/`: Outputs and evaluation metrics.
+cybersecurity_anomaly_detection/
+│
+├── data/                # Place datasets here (must be downloaded manually)
+│   ├── KDDTrain+.txt
+│   └── KDDTest+.txt
+│
+├── notebooks/           # Jupyter notebooks for EDA, training, and evaluation
+├── results/             # Outputs from model training and evaluation (currently), expandable to store runtime detection results later
+├── src/                 # Python scripts (if any used for modular code)
+├── requirements.txt     # Python dependencies
+├── .gitignore
+└── README.md
 
 ## Contributions
 **Feel free to fork this repo or open an issue if you have suggestions for improvement.**
