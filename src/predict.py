@@ -88,11 +88,13 @@ def main():
     x_unscaled = x_encoded
 
     # Predict
-    if args.model == "mlp":
-        probs = predict_mlp(x_scaled, device, input_dim=len(feature_columns))
+    # if args.model == "mlp":
+    #     probs = predict_mlp(x_scaled, device, input_dim=len(feature_columns))
     # elif args.model == "ensemble":
     #     probs = predict_ensemble(x_unscaled, x_scaled, device, feature_columns)
 
+    probs = predict_mlp(x_scaled, device, input_dim=len(feature_columns))
+    
     # Final prediction
     predictions = (probs >= THRESHOLD).astype(int)
 
